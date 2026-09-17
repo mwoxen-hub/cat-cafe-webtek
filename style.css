@@ -1,3 +1,9 @@
 body{
-    background-color: lightblue;
+    background-color: rgb(206, 227, 234);
+    text-align: center;
+}
+
+.textbox{
+    border: 1px solid rgb(171, 207, 171);
+
 }
