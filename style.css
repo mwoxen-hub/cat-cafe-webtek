@@ -1,5 +1,6 @@
 body{
-    background-color: rgb(206, 227, 234);
+    background-color: rgb(199, 218, 199);
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 
@@ -12,4 +13,21 @@ body{
 .toffee-image{
     width: 400px;
     height: auto;
+}
+
+.textbox1{
+    max-width: 900px;
+    margin: 1 auto;
+    padding: 20px;
+
+}
+.box1{
+    border: solid darkgray;
+    border-radius: 5px;
+    margin: 10px;
+}
+.box2{
+    border: solid darkgray;
+    border-radius: 5px;
+    margin: 10px;
 }
