@@ -1,5 +1,6 @@
 body{
-    background-color: rgb(241, 237, 220);
+    background-color: #EEF3EE;
+    color: #4B4A42;
     font-family: "Nunito", sans-serif;
 }
 
@@ -16,13 +17,13 @@ body{
 
 }
 .box1{
-    border: solid darkgray;
-    border-radius: 5px;
+    border: solid #FAF8F3;
+    border-radius: 15px;
     margin: 10px;
 }
 .box2{
-    border: solid darkgray;
-    border-radius: 5px;
+    border: solid #FAF8F3;
+    border-radius: 15px;
     margin: 10px;
 }
 
@@ -35,17 +36,23 @@ body{
     margin: 10px;
 }
 .box3{
-    border: solid darkgray;
+    border: solid #FAF8F3;
 }
 
 h2{
     font-weight: 500;
+    color: #4B4A42;
 }
 
 h1{
     font-weight: 500;
+    color: #6F8F78;
 }
 
 h3{
     font-weight: 500;
+    color: #4B4A42;
+}
+p{
+    color: #6F8F78;
 }
