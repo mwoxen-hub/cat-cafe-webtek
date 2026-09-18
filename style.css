@@ -1,5 +1,5 @@
 body{
-    background-color: #EEF3EE;
+    background-color: #FBF6EF;
     color: #4B4A42;
     font-family: "Nunito", sans-serif;
 }
@@ -17,12 +17,12 @@ body{
 
 }
 .box1{
-    border: solid #FAF8F3;
+    border: 1px solid #6F8F78;
     border-radius: 15px;
     margin: 10px;
 }
 .box2{
-    border: solid #FAF8F3;
+    border: 1px solid #6F8F78;
     border-radius: 15px;
     margin: 10px;
 }
@@ -32,16 +32,16 @@ body{
     max-width: 1500px;
     margin: 1 auto;
     padding: 20px;
-    border-radius: 5px;
+    border-radius: 15px;
     margin: 10px;
 }
 .box3{
-    border: solid #FAF8F3;
+    border: 1px solid #6F8F78;
 }
 
 h2{
     font-weight: 500;
-    color: #4B4A42;
+    color: #3A3A2C;
 }
 
 h1{
