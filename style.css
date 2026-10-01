@@ -1,14 +1,23 @@
-.meny{
-    height: 84px;
-    box-sizing: border-box;
-    padding: 0 80px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    border-bottom: 1px solid #DCE3DC;
-    background: #FFFFFF;
+
+.meny {
+  display: grid;
+  grid-template-columns: auto auto 1fr;  /* nav | info | title */
+  column-gap: 3rem;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 0.5rem 80px;
+  border-bottom: 1px solid #DCE3DC;
+  background: #FFFFFF;
 }
 
+.meny p{
+    white-space: nowrap;
+    margin:0;
+    font-size:0.9rem;
+}
+header{
+    height: auto;
+}
 body{
     background-color: #FBF6EF;
     color: #4B4A42;
@@ -70,4 +79,47 @@ p{
 
 li{
     color: #6F8F78;
+HEAD
+}
+
+footer{
+    color: black;
+}
+.info{
+    display: flex;
+    gap:2rem;
+    width: 100%;
+}
+
+.nav-grid{
+    display: grid;
+    grid-template-columns:auto auto;
+    column-gap:0px;
+    row-gap:0px;
+    margin:0;
+    padding:0;
+    list-style-type: none;
+}
+.nav-grid li{
+    padding: 0.2rem 1rem 0.2rem 0;
+}
+.nav-grid li:nth-child(even){
+    padding-left: 1rem;
+    border-left: 3px dotted #6F8F78;
+
+}
+
+.meny h1{
+    white-space: nowrap;
+}
+
+.nav-grid a{
+    font-family: "Nunito", sans-serif;
+    font-size: 1.2rem;
+    color: #6F8F78;
+    text-decoration: none;
+}
+.nav-grid a:hover{
+    color: #3A3A2C;
+    ce046eb (La til navbar)
 }
