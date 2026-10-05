@@ -1,4 +1,9 @@
 
+header#site-header {
+  border-bottom: 1px solid #DCE3DC;
+  background:#FFFFFF;
+
+}
 .meny {
   display: grid;
   grid-template-columns: auto auto 1fr;  /* nav | info | title */
@@ -6,8 +11,10 @@
   align-items: center;
   box-sizing: border-box;
   padding: 0.5rem 80px;
-  border-bottom: 1px solid #DCE3DC;
-  background: #FFFFFF;
+  
+  /*border-bottom: 1px solid #DCE3DC;
+  background:#FFFFFF;
+  */
 }
 
 .meny p{
@@ -79,8 +86,9 @@ p{
 
 li{
     color: #6F8F78;
-HEAD
+    ;
 }
+
 
 footer{
     color: black;
@@ -89,9 +97,12 @@ footer{
     display: flex;
     gap:2rem;
     width: 100%;
+    justify-content:center;
 }
 
 .nav-grid{
+    background-color: white;
+    /*border: solid 1px #6F8F78;*/
     display: grid;
     grid-template-columns:auto auto;
     column-gap:0px;
@@ -99,13 +110,14 @@ footer{
     margin:0;
     padding:0;
     list-style-type: none;
+    margin-top:-3px;
 }
 .nav-grid li{
-    padding: 0.2rem 1rem 0.2rem 0;
+    padding: 1px 15px 1px 16px;
 }
 .nav-grid li:nth-child(even){
     padding-left: 1rem;
-    border-left: 3px dotted #6F8F78;
+    border-left: 2px solid #6F8F78;
 
 }
 
@@ -121,5 +133,26 @@ footer{
 }
 .nav-grid a:hover{
     color: #3A3A2C;
-    ce046eb (La til navbar)
+}
+
+/*navbar*/
+
+.nav-toggle { display: none; }
+
+.nav-grid a[aria-current="page"] {
+  font-weight: 600;
+}
+
+@media (max-width: 700px) {
+  .nav-toggle {
+    display: block;
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    color: #6F8F78;
+    cursor: pointer;
+  }
+  .nav-grid { display:none;}
+  .nav-grid.open { display: grid; }
+
 }
