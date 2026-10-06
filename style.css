@@ -31,6 +31,7 @@ body{
     background-color: #FBF6EF;
     color: #4B4A42;
     font-family: "Nunito", sans-serif;
+    font-size: 1rem;
 }
 
 .toffee-image{
@@ -83,12 +84,11 @@ h3{
     color: #4B4A42;
 }
 p{
-    color: #6F8F78;
+    color: #4B4A42;
 }
 
 li{
-    color: #6F8F78;
-    ;
+    color: #4B4A42;
 }
 
 
@@ -130,7 +130,7 @@ footer{
 .nav-grid a{
     font-family: "Nunito", sans-serif;
     font-size: 1.2rem;
-    color: #6F8F78;
+    color: #5A7462;
     text-decoration: none;
 }
 .nav-grid a:hover{
@@ -151,7 +151,7 @@ footer{
     font-size: 1.5rem;
     background: none;
     border: none;
-    color: #6F8F78;
+    color: #5A7462;
     cursor: pointer;
   }
   .nav-grid { display:none;}
