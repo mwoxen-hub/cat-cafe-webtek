@@ -6,6 +6,8 @@
     <title>P2 Project Design</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="nav.js" defer></script>
+    <script src="footer.js" defer></script>
 </head>
 
 <body>
@@ -61,6 +63,42 @@
     </section>
     <section>
         <h2>Minimum requirements</h2>
+        <h3>Different JavaScript-functions</h3>
+        <p>We are having 4 different JavaScripts, nav.js which is the navigation bar, footer.js that shows our names in the bottom of every html file. A hoover.js that enlarges the “adopt me” button. The last JavaScript file we will have is a validation for the booking.html, which checks if you have filled in the two buttons. </p>
+        <h3>Four distinct responsive components</h3>
+        <p>
+        <ol>
+            <li>We have the navbar, when the screen-size is under 700px the navbar turns into a burger-menu.  </li>
+            <li>We are also planning on using grid to scale the cat-cards.For example: we have 3 on computer-screens, 2 on ipads and 1on phones. </li>
+            <li>The third component is that the pictures will change sizes to adjust to the screen size, this will also make the useability improve. </li>
+            <li>The last component we are planning on is that the textboxes will change according to the layout. We can use Flexbox and flex-wrap to make this work. </li>
+        </ol>
+        </p>
+        <h3>How we are using CSS for the layout now</h3>
+        <p>We use CCS grid for the header. The .meny class is a grid with three columns (grid-template-columns) and the .nav-grid class uses grid-template-columns: auto auto to lay out the navigation links. <br>
+            The .info class uses Flexbox, display:flex with gap:2rem, so the author, client and date on the P1 HTML document lines up, side by side. <br>
+            We also use width, padding, margin and border to change the layout of content boxes. The textbox1 and textbox2-classes both use width:90%, max-width 1500px and padding 20px so they dont get to wide for the window. We have also use border and border-radius to give a softer look. All layout is now written in one stylesheet, style.css. </p>
+        <h3>What we plan to add</h3>
+        <p>Cat cards – A CSS grid where the numbers of columns adapts to the screen width. 
+            <br>
+            Booking form –Flexbox/Grid so the input boxes will stack on mobile. This is so the boxes won't be too narrow to write in on phones. 
+            <br>
+            @mediarules- to change the layout below 700px, like we have started doing with the burger-menu. </p>
+        <h3> Accessibility measures</h3>
+        <p>ARIA- Accessible Rich Internet Applications, its a set off attributes you add to HTML to share extra information to the screen readers that necessarily isn't clear from just the code itself.
+            <br>
+            In the nav.js we have used aria-label that gives an element a name that the screen reader reads out.  
+            <br>
+            aria-expanded tells us if something is open or closed. button aria-expanded="false/true"
+            <br>
+            aria-current = “page” marks the link to the page the user is on, a href="booking.html" aria-current="page">Booking</a></li> here the screen reader will say “Booking, current page.” </p>
+        <p>Alt text on images – every <img> has an alt that describes the image, for example: alt= “Toffe, a Scottish fold cat” </p>
+        <p>Labels- labels are what points to the id of the input. For example in the booking.html, the “<label for="email"> Email </label>” will make the screen reader read “Email” </p>
+        <p>Visible focus for keyboard users- we are using CSS to make a outline when you navigate with Tab through the website. </p>
+        <p>Contrast between text and background – we have made the font color a color that wil pass the WCAG (Web Content Accessibility Guidelines) requirements. </p>
+
+
+
     </section>
     <section>
         <h2>Plan</h2>
