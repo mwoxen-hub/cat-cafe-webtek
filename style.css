@@ -175,3 +175,12 @@ th, td {
     padding: 10px;
     text-align: left;
 }
+
+.boxes{
+    width: 90%;
+    max-width: 1500px;
+    margin: 1rem auto;
+    padding: 20px;
+    border: 2px solid #6F8F78;
+    border-radius: 25px;
+}
