@@ -170,3 +170,8 @@ a:focus, button:focus, input:focus {
   outline-offset: 2px;
 }
 
+th, td {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: left;
+}
