@@ -31,7 +31,7 @@ body{
     background-color: #FBF6EF;
     color: #4B4A42;
     font-family: "Nunito", sans-serif;
-    font-size: 1rem;
+    font-size: 1rem;;
 }
 
 .toffee-image{
@@ -100,6 +100,13 @@ li{
 
 footer{
     color: black;
+}
+#site-footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem;
 }
 .info{
     display: flex;
