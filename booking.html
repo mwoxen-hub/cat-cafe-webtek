@@ -10,46 +10,65 @@
    
     <style>
         .meny{
-        height: 84px;
-        box-sizing: border-box;
-        padding: 0 80px;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        border-bottom: 1px solid #DCE3DC;
-        background: #FFFFFF;
+            height: 84px;
+            box-sizing: border-box;
+            padding: 0 80px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-bottom: 1px solid #DCE3DC;
+            background: #FFFFFF;
         }
         
         h1{
             color: #6F8F78;
-        }
-        #fullName{
-            border-radius: 10px;
-            border: 1px solid black;
-            width: 25%;
-        }
-
-        #email{
-            border-radius: 10px;
-            border: 1px solid black;
-            width: 25%;
+            text-align: center;
         }
 
         body{background-color: #FBF6EF;
         color: #4B4A42;
         font-family: "Nunito", sans-serif;
         }
+
         button{
             margin: 20px;
         }
+
         button:hover{
             width: 10%;
         }
+
         h1 a{
             font-family: "Nunito", sans-serif;
             font-size: 30px;
             color:#6F8F78;
             text-decoration: none;
+        }
+
+        form{
+            text-align: left;
+            background-color: white;
+            max-width: 500px;
+            margin: 30px auto;
+            padding: 50px;
+            border-radius: 5%;
+        }
+
+        input{
+            padding: 10px;
+            border: 1px solid #ccc;
+            margin-bottom: 15px;
+            border-radius: 6px;
+    
+        }
+
+        #submit{
+            background-color: rgb(61, 112, 61);
+            border-radius: 10px;
+            height: 40px;
+            width: 50%;
+            border: 1px solid #ccc;
+    
         }
     </style>
 <!--<header>
@@ -67,11 +86,32 @@
      <h1> BOOKING </h1>
      
     <form>
-        <label for="fullName"> Full Name </label>
-        <input type="text" id ="fullName" name="fullName" placeholder="Write your full name here">
+        <label for="firstName"> First Name </label>
+        <input type="text" id ="firstName" name="firstName" placeholder="First name" required>
+        <br>
+        <label for="lastName"> Last Name </label>
+        <input type="text" id ="lastName" name="lastName" placeholder="Last name" required>
         <br>
         <label for="email"> Email </label>
-        <input type="email" id ="email" name="email" placeholder="Write your email here">
+        <input type="email" id ="email" name="email" placeholder="Example@mail.com" required>
+        <br>
+        <label for="bookDate" > Select Date </label>
+        <input id = "bookDate" type="date" min="2026-11-05" required> 
+        <br>
+        <label for="time"> Select Time</label>
+        <input id="time" type="time" step="900" min="16:00" required>
+        <br>
+        <label for="people"> Number of guests</label>
+        <select id="people" type="people" min="1" required>
+            <option value="1"> 1 </option>
+            <option value="2"> 2 </option>
+            <option value="3"> 3 </option>
+            <option value="4"> 4 </option>
+            <option value="5"> 5 </option>
+            <option value="6"> 6 </option>
+            <option value="7"> 7 </option>
+            <option value="8"> 8 </option>
+        </select>
         <br>
         <button type="submit"> submit</button>
     </form>
