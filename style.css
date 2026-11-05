@@ -29,11 +29,37 @@ header#site-header {
 header{
     height: auto;
 }
-body{
+html, body{
+    margin: 0;
+    padding: 0;
     background-color: #FBF6EF;
     color: #4B4A42;
     font-family: "Nunito", sans-serif;
     font-size: 1rem;;
+}
+.formElement {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 20px;
+    border-radius: 20px;
+}
+
+.formElement input,
+.formElement select,
+.formElement textarea{
+    border-radius: 8px;
+}
+.formElement input:focus,
+.formElement select:focus,
+.formElement textarea:focus{
+    border-color: rgb(108, 83, 61);
+    outline: none;
+}
+
+.formElement label{
+margin-bottom: 4px;
+color: rgb(108, 83, 61);
 }
 
 img{
