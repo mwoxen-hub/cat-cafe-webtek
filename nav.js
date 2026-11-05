@@ -28,11 +28,6 @@ function buildNavbar(){
         '    <ul class="nav-grid" id="nav-list">' + items + "</ul>" + // her er listas id
         "  </nav>" +
         '<h1 class = "site-title">Purr &amp; Pour </h1>' +
-        '</div>' + 
-        '<div class="info">'+
-            '<p>Authors: Marie, Lea, Dana and Elena</p>' +
-            '<p>Client: Cathrine Cat</p>'+
-            '<p>Date: 18 September 2026</p>'+
         '</div>'
 
     );
