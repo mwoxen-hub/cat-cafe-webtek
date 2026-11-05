@@ -388,3 +388,13 @@ a:hover{
         grid-template-columns: 1fr;
     }
 }
+
+.row {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.contactbox{
+    flex: 1;
+    padding: 16px;
+}
