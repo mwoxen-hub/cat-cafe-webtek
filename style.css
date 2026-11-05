@@ -210,9 +210,14 @@ footer{
     color: #5A7462;
     cursor: pointer;
   }
+  .meny nav{width: 100%;}
+  .nav-toggle:hover{background: none; box-shadow:none;}
   .nav-grid { display:none;}
-  .nav-grid.open { display: grid; }
-
+  .nav-grid.open { display: grid; grid-template-columns: 1fr; row-gap: 0.75rem;}
+.meny{
+    padding: 0.5rem 1rem;
+    flex-wrap: wrap;
+}
 }
 
 a:focus, button:focus, input:focus {
