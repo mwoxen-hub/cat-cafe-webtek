@@ -339,6 +339,48 @@ button:hover{
     width: 100%;
 }
 
+        button{
+            margin: 20px;
+        }
+
+        button:hover{
+            width: 10%;
+        }
+
+        h1 a{
+            font-family: "Nunito", sans-serif;
+            font-size: 30px;
+            color:#6F8F78;
+            text-decoration: none;
+        }
+
+        form{
+            text-align: left;
+            background-color: white;
+            max-width: 500px;
+            margin: 30px auto;
+            padding: 50px;
+            border-radius: 5%;
+        }
+
+        input{
+            padding: 10px;
+            border: 1px solid #ccc;
+            margin-bottom: 15px;
+            border-radius: 6px;
+    
+        }
+
+#submit{
+    display: block;
+    background-color: rgb(107, 152, 107);
+    border-radius: 10px;
+    height: 40px;
+    width: 50%;
+    border: 1px solid #ccc;
+    margin: 20px 0;
+    
+}
 a, a:visited{
     color:#4A6B53;
     text-underline-offset: 3px;
@@ -410,7 +452,7 @@ a:hover{
     flex-wrap: wrap;
 }
 .contactbox{
-    flex: 1;
+    flex: 1 1 250px;
     padding: 16px;
 }
 
