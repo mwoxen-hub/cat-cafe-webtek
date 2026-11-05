@@ -399,6 +399,6 @@ a:hover{
     flex-wrap: wrap;
 }
 .contactbox{
-    flex: 1;
+    flex: 1 1 250px;
     padding: 16px;
 }
