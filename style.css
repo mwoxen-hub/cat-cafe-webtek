@@ -339,22 +339,7 @@ button:hover{
     width: 100%;
 }
 
-        button{
-            margin: 20px;
-        }
-
-        button:hover{
-            width: 10%;
-        }
-
-        h1 a{
-            font-family: "Nunito", sans-serif;
-            font-size: 30px;
-            color:#6F8F78;
-            text-decoration: none;
-        }
-
-        form{
+        .booking-form{
             text-align: left;
             background-color: white;
             max-width: 500px;
@@ -363,7 +348,7 @@ button:hover{
             border-radius: 5%;
         }
 
-        input{
+        .booking-form input{
             padding: 10px;
             border: 1px solid #ccc;
             margin-bottom: 15px;
