@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        html, body {
+            margin: 0;
+            padding: 0;
+            background-color: floralwhite;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        .formElement {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            margin-top: 20px;
+            border-radius: 20px;
+        }
+
+        .formElement input,
+        .formElement select,
+        .formElement textarea{
+            border-radius: 8px;
+        }
+        .formElement input:focus,
+        .formElement select:focus,
+        .formElement textarea:focus{
+            border-color: rgb(108, 83, 61);
+            outline: none;
+        }
+
+        .formElement label{
+            margin-bottom: 4px;
+            color: rgb(108, 83, 61);
+        }
+
+        main {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            width: 100%;
+            margin-bottom: 40px;
+        }
+
+        form {
+            width: 60%;
+        }
+
+        .buttonContainer {
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .buttonContainer button {
+            width: 49%;
+        }
+
+        h1{
+            color: rgb(108, 83, 61);
+        }
+
+        h4{
+            color: rgb(108, 83, 61);
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Adoption form</h1>
+
+        <form action="#" method="post">
+            <div class="formElement">
+                <label for="fullName">Full name</label> 
+                <input type="text" name="fullName" id="fullName" required>
+            </div>
+
+            <div class="formElement">
+                <label for="email">Email</label> 
+                <input type="email" name="email" id="email" required>
+            </div>
+
+            <div class="formElement">
+                <label for="password">Password</label> 
+                <input type="password" name="password" id="password" required minlength="8">
+            </div>
+
+            <div class="formElement">
+                <label for="phone">Phone number</label> 
+                <input type="tel" name="phone" id="phone" required pattern="[0-9]{3} 0-9]{2} 0-9]{3}">
+            </div>
+
+            <div class="formElement">
+                <label for="date">Birth date</label> 
+                <input type="date" name="date" id="date" required max="2006-20-10">
+            </div>
+
+            <div class="formElement">
+                <label for="cat">Cat</select> 
+                <select name="cat" id="cat">
+                    <option value disabled selected>Choose desired cat</option>
+                    <option value="mrk">Mr. K</option>
+                    <option value="brage">Brage</option>
+                </select>
+            </div>
+
+            <div class="formElement">
+                <h4>Cat food subscription</h4>
+                <label for="premium">Premium</label>
+                <input type="radio" name="diet" id="premium" checked>
+                <label for="gold">Gold</label>
+                <input type="radio" name="diet" id="gold">
+                <label for="silver">Silver</label>
+                <input type="radio" name="diet" id="silver">
+            </div>
+
+            <div class="formElement">
+                <h4>Other pets in home?</h4>
+                <label for="dog">Dog</label>
+                <input type="checkbox" name="pets" id="dog">
+                <label for="cat">Cat</label>
+                <input type="checkbox" name="pets" id="cat">
+                <label for="other">Other</label>
+                <input type="checkbox" name="pets" id="other">
+            </div>
+
+            <div class="formElement">
+                <label for="otherPets">Other pets</label>
+                <textarea name="otherPets" id="otherPets" rows="2"></textarea>
+            </div>
+
+            <div class="formElement">
+                <label for="previousEvents">Previous total pets:<output id="previousEventsNumber"> 0 </output> </label>
+                <input type="range" name="previousTotalEvents" id="previousTotalEvents" min="0" max="20">
+            </div>
+
+            <div class="formElement">
+                <label for="pet">Picture of other pets</label>
+                <input type="file" id="pet" name="pet" accept="image/*">
+            </div>
+
+            <div class="buttonContainer">
+                <button type="submit"> Send application </button>
+                <button type="reset"> Reset form </button>
+            </div>
+        </form>
+    </main>
+
+<script>
+    const elementToBeUpdated = document.getElementById("previousEventsNumber");
+    const rangeElement = document.getElementById("previousTotalEvents");
+    rangeElement.addEventListener("input", function(event){
+        elementToBeUpdated.innerHTML = event.target.value;
+    })
+
+</script>
+
+</body>
+</html>
