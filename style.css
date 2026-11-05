@@ -96,10 +96,9 @@ li{
     color: #4A6B53;
     color: #4A6B53;
 }
-
-li{
-    color: #4A6B53;
-
+ul{
+    list-style-type:none;
+    padding:1px;
 }
 
 footer{
