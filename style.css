@@ -170,22 +170,16 @@ footer{
     background-color: white;
     /*border: solid 1px #6F8F78;*/
     display: grid;
-    grid-template-columns:auto auto;
-    column-gap:0px;
+    grid-template-columns:repeat(6, auto);
+    column-gap: 1.5rem;
     row-gap:0px;
     margin:0;
     padding:0;
     list-style-type: none;
     margin-top:-3px;
 }
-.nav-grid li{
-    padding: 1px 15px 1px 16px;
-}
-.nav-grid li:nth-child(even){
-    padding-left: 1rem;
-    border-left: 2px solid #6F8F78;
 
-}
+
 
 .meny h1{
     white-space: nowrap;
