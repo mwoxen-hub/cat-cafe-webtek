@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&display=swap");
+
 * {
     box-sizing: border-box;
 }
@@ -267,4 +269,14 @@ button:hover{
 .goals-list{
     list-style-type: disc;
     padding-left: 1.5rem;
+}
+
+.page{
+    width: 90%;
+    max-width: 1100px;
+    margin: 1rem auto;
+}
+
+.page .boxes {
+    width: 100%;
 }
