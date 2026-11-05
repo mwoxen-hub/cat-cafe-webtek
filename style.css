@@ -269,12 +269,14 @@ th, td {
 .button,
 button{
     display:inline-block;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: inherit;
+    font-size: 1rem;
     color:white;
-    background-color:#6F8F78;
-    border-radius: 5px;
-    border-color: #3A3A2C;
+    background-color: #4A6B53;
+    border-radius: 999px;
+    border: none;
     cursor: pointer;
+    padding: 0.6rem 1.4rem;
 
 }
 .button:hover,
