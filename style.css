@@ -34,9 +34,12 @@ body{
     font-size: 1rem;;
 }
 
-.toffee-image{
-    width: 400px;
-    height: auto;
+img{
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 12px;
+    display: block;
 }
 
 .textbox1{
@@ -99,13 +102,11 @@ li{
 
 }
 
-
 footer{
     color: black;
 }
 #site-footer {
-    bottom: 0;
-    left: 0;
+    margin-top:auto;
     width: 100%;
     padding: 1rem;
 }
