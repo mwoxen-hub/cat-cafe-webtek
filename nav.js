@@ -21,16 +21,17 @@ function buildNavbar(){
             return '<li><a href="' + link.url + '"' + active + ">" + link.text + "</a></li>";
         })
         .join("");
-    return (
-        '<div class="meny">' +
-        '  <button class="nav-toggle" aria-expanded="false" aria-controls = "nav-list" aria-label="Open menu">=</button>' +
-        '  <nav aria-label="Main navigation">'+
-        '    <ul class="nav-grid" id="nav-list">' + items + "</ul>" + // her er listas id
-        "  </nav>" +
-        '<h1 class = "site-title">Purr &amp; Pour </h1>' +
-        '</div>'
 
-    );
+return (
+    '<div class="meny">' +
+    '<h1 class = "site-title">Purr &amp; Pour </h1>' +
+    '  <button class="nav-toggle" aria-expanded="false" aria-controls="nav-list" aria-label="Open menu">=</button>' +
+    '  <nav aria-label="Main navigation">'+
+    '    <ul class="nav-grid" id="nav-list">' + items + "</ul>" +
+    "  </nav>" +
+    '</div>'
+);
+
 }
 //this is what makes the burger-menu on phones
 function setupToggle (){
