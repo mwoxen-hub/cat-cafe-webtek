@@ -3,50 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Booking - Purr & Pour</title>
+    <title>Booking - Purr &amp; Pour</title>
     <link rel="stylesheet" href="style.css">
     <script src="nav.js" defer></script>
     <script src="footer.js" defer></script>
-    
-   
-   
-
 </head>
 <body>
-    <header id ="site-header"></header>
+    <header id="site-header"></header>
 
-     <h1> BOOKING </h1>
-     
-    <form>
-        <label for="firstName"> First Name </label>
-        <input type="text" id ="firstName" name="firstName" placeholder="First name" required>
-        <br>
-        <label for="lastName"> Last Name </label>
-        <input type="text" id ="lastName" name="lastName" placeholder="Last name" required>
-        <br>
-        <label for="email"> Email </label>
-        <input type="email" id ="email" name="email" placeholder="Example@mail.com" required>
-        <br>
-        <label for="bookDate" > Select Date </label>
-        <input id = "bookDate" type="date" min="2026-11-05" required> 
-        <br>
-        <label for="time"> Select Time</label>
-        <input id="time" type="time" step="900" min="16:00" required>
-        <br>
-        <label for="people"> Number of guests</label>
-        <select id="people" type="people" min="1" required>
-            <option value="1"> 1 </option>
-            <option value="2"> 2 </option>
-            <option value="3"> 3 </option>
-            <option value="4"> 4 </option>
-            <option value="5"> 5 </option>
-            <option value="6"> 6 </option>
-            <option value="7"> 7 </option>
-            <option value="8"> 8 </option>
-        </select>
-        <br>
-        <button id="submit" type="submit"> submit</button>
-    </form>
+    <main class="page">
+        <h1>Booking</h1>
+
+        <form class="booking-form">
+            <label for="firstName">First name</label>
+            <input type="text" id="firstName" name="firstName" placeholder="First name" required>
+
+            <label for="lastName">Last name</label>
+            <input type="text" id="lastName" name="lastName" placeholder="Last name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="example@mail.com" required>
+
+            <label for="bookDate">Select date</label>
+            <input type="date" id="bookDate" name="bookDate" min="2026-11-05" required>
+
+            <label for="time">Select time</label>
+            <input type="time" id="time" name="time" step="900" min="16:00" required>
+
+            <label for="people">Number of guests</label>
+            <select id="people" name="people" required>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+            </select>
+
+            <button id="submit" type="submit">Book a table</button>
+        </form>
+    </main>
+
     <footer id="site-footer"></footer>
 </body>
 </html>
