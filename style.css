@@ -330,3 +330,11 @@ button:hover{
 .page .boxes {
     width: 100%;
 }
+
+a, a:visited{
+    color:#4A6B53;
+    text-underline-offset: 3px;
+}
+a:hover{
+    color:#3A3A2C;
+}
