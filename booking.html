@@ -9,6 +9,7 @@
     <script src="footer.js" defer></script>
    
     <style>
+
         .meny{
             height: 84px;
             box-sizing: border-box;
@@ -63,11 +64,13 @@
         }
 
         #submit{
-            background-color: rgb(61, 112, 61);
+            display: block;
+            background-color: rgb(107, 152, 107);
             border-radius: 10px;
             height: 40px;
             width: 50%;
             border: 1px solid #ccc;
+            margin: 20px 0;
     
         }
     </style>
@@ -113,7 +116,7 @@
             <option value="8"> 8 </option>
         </select>
         <br>
-        <button type="submit"> submit</button>
+        <button id="submit" type="submit"> submit</button>
     </form>
     <footer id="site-footer"></footer>
 </body>
