@@ -1,10 +1,10 @@
 const navLinks = [
     { text: "Home", url: "index.html" },
-    { text: "Menu", url: "menu.html" },
-    { text: "Cats", url: "cats.html" },
     { text: "About", url: "about.html" },
-    { text: "Contact", url: "contact.html" },
-    { text: "Booking", url: "booking.html" }
+    { text: "Cats", url: "cats.html" },
+    { text: "Menu", url: "menu.html" },
+    { text: "Booking", url: "booking.html" },
+    { text: "Contact", url: "contact.html" }
 ];
 
 function currentPage(){
