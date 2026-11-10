@@ -65,7 +65,9 @@ h4 {
     color: #4A6B53;
 }
 
-input[type="range"] {
+input[type="range"],
+input[type="radio"],
+input[type="checkbox"] {
     accent-color: #4A6B53;
 }
 
