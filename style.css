@@ -53,13 +53,20 @@ html, body{
 .formElement input:focus,
 .formElement select:focus,
 .formElement textarea:focus{
-    border-color: rgb(108, 83, 61);
+    border-color: #4A6B53;
     outline: none;
 }
 
 .formElement label{
-margin-bottom: 4px;
-color: rgb(108, 83, 61);
+    margin-bottom: 4px;
+    color: #4A6B53;
+}
+h4 {
+    color: #4A6B53;
+}
+
+input[type="range"] {
+    accent-color: #4A6B53;
 }
 
 main {
