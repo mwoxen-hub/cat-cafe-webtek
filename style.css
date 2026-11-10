@@ -232,13 +232,16 @@ th, td {
     text-align: left;
 }
 
-.boxes{
+.boxes {
     width: 90%;
     max-width: 1500px;
     margin: 1rem auto;
     padding: 20px;
     border: 2px solid #6F8F78;
     border-radius: 25px;
+}
+.boxes h2{
+    margin-top: 0;
 }
 .cat-grid{
     display: grid;
