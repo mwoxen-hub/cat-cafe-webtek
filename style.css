@@ -593,16 +593,12 @@ a:hover{
     border-radius: 12px;
 }
 
-.footer-row {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 40px;
-}
-
 .footer-group {
     flex: 1 1 220px;
 }
 
-.footer-credit {
+.footer-credits {
     margin-top: 24px;
+    text-align: center;
+    font-size: 0.9rem;
 }
