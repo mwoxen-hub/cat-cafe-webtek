@@ -43,96 +43,98 @@
             </ul>
             <p>All cats are ID-marked, neutered and fully vaccinated before they move to their new home.</p>
         </section>
-        <h2>Adoption form</h2>
-        <form action="#" method="post">
-            <div class="formElement">
-                <label for="fullName">Full name</label>
-                <input type="text" name="fullName" id="fullName" required>
-            </div>
+        <section class="boxes">
+            <h2>Adoption form</h2>
+            <form action="#" method="post">
+                <div class="formElement">
+                    <label for="fullName">Full name</label>
+                    <input type="text" name="fullName" id="fullName" required>
+                </div>
 
-            <div class="formElement">
-                <label for="email">Email</label>
-                <input type="email" name="email" id="email" required>
-            </div>
+                <div class="formElement">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" required>
+                </div>
 
-            <div class="formElement">
-                <label for="password">Password</label>
-                <input type="password" name="password" id="password" required minlength="8">
-            </div>
+                <div class="formElement">
+                    <label for="password">Password</label>
+                    <input type="password" name="password" id="password" required minlength="8">
+                </div>
 
-            <div class="formElement">
-                <label for="phone">Phone number</label>
-                <input type="tel" name="phone" id="phone" required pattern="[0-9]{3} [0-9]{2} [0-9]{3}"
-                    placeholder="123 45 678">
-            </div>
+                <div class="formElement">
+                    <label for="phone">Phone number</label>
+                    <input type="tel" name="phone" id="phone" required pattern="[0-9]{3} [0-9]{2} [0-9]{3}"
+                        placeholder="123 45 678">
+                </div>
 
-            <div class="formElement">
-                <label for="date">Birth date</label>
-                <input type="date" name="date" id="date" required max="2008-11-10">
-            </div>
+                <div class="formElement">
+                    <label for="date">Birth date</label>
+                    <input type="date" name="date" id="date" required max="2008-11-10">
+                </div>
 
-            <div class="formElement">
-                <label for="cat">Cat</label>
-                <select name="cat" id="cat">
-                    <option value disabled selected>Choose desired cat</option>
-                    <option value="mrk">Mr. K</option>
-                    <option value="yoda">Yoda</option>
-                    <option value="tuon">Tuon</option>
-                    <option value="simba">Simba</option>
-                    <option value="toffee">Toffee</option>
-                    <option value="java">Java</option>
-                    <option value="kevin">Kevin</option>
-                    <option value="purrito">Purrito</option>
-                </select>
-            </div>
+                <div class="formElement">
+                    <label for="cat">Cat</label>
+                    <select name="cat" id="cat">
+                        <option value disabled selected>Choose desired cat</option>
+                        <option value="mrk">Mr. K</option>
+                        <option value="yoda">Yoda</option>
+                        <option value="tuon">Tuon</option>
+                        <option value="simba">Simba</option>
+                        <option value="toffee">Toffee</option>
+                        <option value="java">Java</option>
+                        <option value="kevin">Kevin</option>
+                        <option value="purrito">Purrito</option>
+                    </select>
+                </div>
 
-            <div class="formElement">
-                <h4>Cat food subscription</h4>
-                <label for="premium">
-                    <input type="radio" name="diet" id="premium" value="premium" checked>Premium
-                </label>
-                <label for="gold">
-                    <input type="radio" name="diet" id="gold" value="gold">Gold
-                </label>
-                <label for="silver">
-                    <input type="radio" name="diet" id="silver" value="silver">Silver
-                </label>
-            </div>
+                <div class="formElement">
+                    <h4>Cat food subscription</h4>
+                    <label for="premium">
+                        <input type="radio" name="diet" id="premium" value="premium" checked>Premium
+                    </label>
+                    <label for="gold">
+                        <input type="radio" name="diet" id="gold" value="gold">Gold
+                    </label>
+                    <label for="silver">
+                        <input type="radio" name="diet" id="silver" value="silver">Silver
+                    </label>
+                </div>
 
-            <div class="formElement">
-                <h4>Other pets in home?</h4>
-                <label for="dog">
-                    <input type="checkbox" name="pets" id="dog">Dog
-                </label>
-                <label for="petCat">
-                    <input type="checkbox" name="pets" id="petCat">Cat
-                </label>
-                <label for="other">
-                    <input type="checkbox" name="pets" id="other" value="other">Other
-                </label>
-            </div>
+                <div class="formElement">
+                    <h4>Other pets in home?</h4>
+                    <label for="dog">
+                        <input type="checkbox" name="pets" id="dog">Dog
+                    </label>
+                    <label for="petCat">
+                        <input type="checkbox" name="pets" id="petCat">Cat
+                    </label>
+                    <label for="other">
+                        <input type="checkbox" name="pets" id="other" value="other">Other
+                    </label>
+                </div>
 
-            <div class="formElement">
-                <label for="otherPets">Other pets</label>
-                <textarea name="otherPets" id="otherPets" rows="2"></textarea>
-            </div>
+                <div class="formElement">
+                    <label for="otherPets">Other pets</label>
+                    <textarea name="otherPets" id="otherPets" rows="2"></textarea>
+                </div>
 
-            <div class="formElement">
-                <label for="previousTotalEvents">Previous total pets:<output id="previousEventsNumber"> 10 </output>
-                </label>
-                <input type="range" name="previousTotalEvents" id="previousTotalEvents" min="0" max="20">
-            </div>
+                <div class="formElement">
+                    <label for="previousTotalEvents">Previous total pets:<output id="previousEventsNumber"> 10 </output>
+                    </label>
+                    <input type="range" name="previousTotalEvents" id="previousTotalEvents" min="0" max="20">
+                </div>
 
-            <div class="formElement">
-                <label for="pet">Picture of other pets</label>
-                <input type="file" id="pet" name="pet" accept="image/*">
-            </div>
+                <div class="formElement">
+                    <label for="pet">Picture of other pets</label>
+                    <input type="file" id="pet" name="pet" accept="image/*">
+                </div>
 
-            <div class="buttonContainer">
-                <button type="submit"> Send application </button>
-                <button type="reset"> Reset form </button>
-            </div>
-        </form>
+                <div class="buttonContainer">
+                    <button type="submit"> Send application </button>
+                    <button type="reset"> Reset form </button>
+                </div>
+            </form>
+        </section>
     </main>
     <footer id="site-footer"></footer>
 </body>
