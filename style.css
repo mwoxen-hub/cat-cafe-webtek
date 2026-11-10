@@ -508,3 +508,70 @@ a:hover{
 .cat-card li {
   margin-bottom: 6px;
 }
+
+.page .intro,
+.page .featured,
+.page .menu-highlights,
+.page .visit {
+    width: 100%;
+    background-color: white;
+    border-radius: 25px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 12px rgba(58, 58, 44, 0.08);
+}
+
+.page .intro h2,
+.page .featured h2,
+.page .menu-highlights h2,
+.page .visit h2 {
+    margin-top: 0;
+}
+
+.page h1,
+.tagline {
+    text-align: center;
+}
+
+.tagline {
+    font-size: 1.2rem;
+    margin-top: 0;
+}
+
+.hero-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 2rem;
+}
+
+.featured .cat-grid {
+    width: 100%;
+    margin: 1.5rem 0;
+}
+
+.menu-highlights .menu-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2rem;
+    margin-bottom: 1rem;
+}
+
+.visit-info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+    margin-bottom: 1.5rem;
+}
+
+.visit-info h3 {
+    margin-top: 0;
+}
+
+.visit iframe {
+    width: 100%;
+    height: 350px;
+    border: 0;
+    border-radius: 12px;
+}
