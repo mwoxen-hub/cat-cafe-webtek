@@ -15,9 +15,6 @@ header#site-header {
   align-items: center;
   padding: 0.5rem 80px;
   
-  /*border-bottom: 1px solid #DCE3DC;
-  background:#FFFFFF;
-  */
 }
 
 .meny p{
@@ -56,13 +53,22 @@ html, body{
 .formElement input:focus,
 .formElement select:focus,
 .formElement textarea:focus{
-    border-color: rgb(108, 83, 61);
+    border-color: #4A6B53;
     outline: none;
 }
 
 .formElement label{
-margin-bottom: 4px;
-color: rgb(108, 83, 61);
+    margin-bottom: 4px;
+    color: #4A6B53;
+}
+h4 {
+    color: #4A6B53;
+}
+
+input[type="range"],
+input[type="radio"],
+input[type="checkbox"] {
+    accent-color: #4A6B53;
 }
 
 main {
@@ -207,7 +213,7 @@ footer{
   font-weight: 600;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 900px) {
   .nav-toggle {
     display: block;
     font-size: 1.5rem;
@@ -510,4 +516,71 @@ a:hover{
 
 .cat-card li {
   margin-bottom: 6px;
+}
+
+.page .intro,
+.page .featured,
+.page .menu-highlights,
+.page .visit {
+    width: 100%;
+    background-color: white;
+    border-radius: 25px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 12px rgba(58, 58, 44, 0.08);
+}
+
+.page .intro h2,
+.page .featured h2,
+.page .menu-highlights h2,
+.page .visit h2 {
+    margin-top: 0;
+}
+
+.page h1,
+.tagline {
+    text-align: center;
+}
+
+.tagline {
+    font-size: 1.2rem;
+    margin-top: 0;
+}
+
+.hero-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 2rem;
+}
+
+.featured .cat-grid {
+    width: 100%;
+    margin: 1.5rem 0;
+}
+
+.menu-highlights .menu-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2rem;
+    margin-bottom: 1rem;
+}
+
+.visit-info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+    margin-bottom: 1.5rem;
+}
+
+.visit-info h3 {
+    margin-top: 0;
+}
+
+.visit iframe {
+    width: 100%;
+    height: 350px;
+    border: 0;
+    border-radius: 12px;
 }
