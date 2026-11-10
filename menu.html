@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="nav.js"></script>
+    <script src="nav.js" defer></script>
+    <script src="filter.js" defer></script>
     <link href="style.css" rel="stylesheet">
 </head>
 <body>
@@ -15,7 +16,16 @@
         <p>Freshly made coffee, tea and treats. Enjoy them with a cat on your lap.</p>
     </section>
 
-    <section class="menu-category">
+    <div class="menu-filter">
+        <button data-filter="all" class="active">All</button>
+        <button data-filter="coffee">Coffee</button>
+        <button data-filter="drinks">Other drinks</button>
+        <button data-filter="bites">Light bites</button>
+        <button data-filter="sweet">Sweet treats</button>
+        <button data-filter="cats">For the cats</button>
+    </div>
+
+    <section class="menu-category" data-category="coffee">
         <h2>Coffee</h2>
         <div class="menu-grid">
             <div class="menu-item">
@@ -50,7 +60,7 @@
     </section>
     <br>
 
-    <section class="menu-category">
+    <section class="menu-category" data-category="drinks">
         <h2>Other drinks</h2>
         <div class="menu-grid">
             <div class="menu-item">
@@ -85,7 +95,7 @@
     </section>
     <br>
 
-    <section class="menu-category">
+    <section class="menu-category" data-category="bites">
         <h2>Light bites</h2>
         <div class="menu-grid">
             <div class="menu-item">
@@ -113,7 +123,7 @@
     </section>
     <br>
 
-    <section class="menu-category">
+    <section class="menu-category" data-category="sweet">
         <h2>Sweet treats</h2>
         <div class="menu-grid">
             <div class="menu-item">
@@ -148,7 +158,7 @@
     </section>
     <br>
 
-    <section class="menu-category">
+    <section class="menu-category" data-category="cats">
         <h2>Sweets for the cats</h2>
         <div class="menu-grid">
             <div class="menu-item">
@@ -157,18 +167,15 @@
                     <p class="menu-desc">A sweet delight for the cats to eat</p>
                 </div>
                 <span class="menu-price">15 kr</span>
-                </div>
-               
-        <div class="menu-grid">
+            </div>
             <div class="menu-item">
                 <div>
                     <span class="menu-name">Cat Donut</span>
                     <p class="menu-desc">Donut with some glaze the cats love to lick off</p>
                 </div>
                 <span class="menu-price">20 kr</span>
-                </div>
-
-
+            </div>
+        </div>
     </section>
 
 
