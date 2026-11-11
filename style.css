@@ -608,3 +608,10 @@ a:hover{
         width: 100%;
     }
 }
+
+.button,
+.button:visited,
+.button:hover {
+    color: white;
+    text-decoration: none;
+}
