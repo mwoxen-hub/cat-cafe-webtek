@@ -277,12 +277,6 @@ th, td {
     object-fit: cover;
 }
 
-@media (max-width:1200px){
-    .cat-grid{
-        width:45%
-    }
-}
-
   @media (max-width:1000px) {
     .feature-item{
       width: 45%;
