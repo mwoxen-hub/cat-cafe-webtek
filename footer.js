@@ -2,7 +2,7 @@ const footerHTML =
     "<div class='footer-columns'>" +
         "<div class='footer-group'>" +
             "<h3>Visit us</h3>" +
-            "<p>Haakons gate 255B, 7030 Trondheim</p>" +
+            "<p>Nordre gate 10, 7011 Trondheim</p>" +
             "<p>Opening hours:</p>" +
             "<p>Mon-Fri: 10:00 - 18:00</p>" +
             "<p>Sat-Sun: 11:00 - 17:00</p>" +
