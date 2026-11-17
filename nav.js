@@ -17,14 +17,14 @@ function buildNavbar(){
 
     const items = navLinks
         .map(function (link){
-            const active = link.url === current ? 'aria-current="page"' :"";
+            const active = link.url === current ? ' aria-current="page"' :"";
             return '<li><a href="' + link.url + '"' + active + ">" + link.text + "</a></li>";
         })
         .join("");
 
 return (
     '<div class="meny">' +
-    '<p class="site-title">Purr &amp; Pour</p>' +
+    '<p class="site-title"><a href="index.html">Purr &amp; Pour</a></p>' +
     '  <button class="nav-toggle" aria-expanded="false" aria-controls="nav-list" aria-label="Open menu">=</button>' +
     '  <nav aria-label="Main navigation">'+
     '    <ul class="nav-grid" id="nav-list">' + items + "</ul>" +
