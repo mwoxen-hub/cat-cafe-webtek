@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="style.css">
     <script src="nav.js" defer></script>
     <script src="footer.js" defer></script>
+    <script src="cat-filter.js" defer></script>
 </head>
 
 <body>
@@ -21,8 +22,13 @@
         <p>Interested in adopting? <a class="link-arrow" href="adoption.html">Click here! &rarr;</a></p>
 
         <h2>Meet the cats</h2>
+        <div class="cat-filter">
+            <button type="button" data-filter="all" class="active">All cats</button>
+            <button type="button" data-filter="adoption">Available for adoption</button>
+            <button type="button" data-filter="resident">Café residents</button>
+        </div>
         <div class="cat-grid">
-            <article class="cat-card">
+            <article class="cat-card" data-status="resident">
                 <img src="bilder/tuon.jpeg" alt="A grey, brown and white Siberian cat with blue-grey eyes">
                 <h3>Tuon</h3>
                 <ul>
@@ -34,7 +40,7 @@
                 </ul>
             </article>
 
-            <article class="cat-card">
+            <article class="cat-card" data-status="resident">
                 <img src="bilder/mr-k.jpg" alt="A light grey British Shorthair kitten">
                 <h3>Mr. K</h3>
                 <ul>
@@ -46,7 +52,7 @@
                 </ul>
             </article>
 
-            <article class="cat-card">
+            <article class="cat-card" data-status="resident">
                 <img src="bilder/Simba.jpg" alt="A Bengal cat sleeping on a sofa">
                 <h3>Simba</h3>
                 <ul>
@@ -58,7 +64,7 @@
                 </ul>
             </article>
 
-            <article class="cat-card">
+            <article class="cat-card" data-status="adoption">
                 <img src="bilder/toffee.jpg" alt="A grey and black striped cat sitting almost like a human">
                 <h3>Toffee</h3>
                 <ul>
@@ -71,7 +77,7 @@
                 </ul>
             </article>
 
-            <article class="cat-card">
+            <article class="cat-card" data-status="adoption">
                 <img src="bilder/java.jpg" alt="A brown and white kitten climbing a chair">
                 <h3>Java</h3>
                 <ul>
@@ -84,7 +90,7 @@
                 </ul>
             </article>
 
-            <article class="cat-card">
+            <article class="cat-card" data-status="adoption">
                 <img src="bilder/kevin.jpeg" alt="A fluffy grey cat yawning">
                 <h3>Kevin</h3>
                 <ul>
@@ -97,7 +103,7 @@
                 </ul>
             </article>
 
-            <article class="cat-card">
+            <article class="cat-card" data-status="resident">
                 <img src="bilder/Yoda.jpeg" alt="A grey cat with big ears and orange eyes">
                 <h3>Yoda</h3>
                 <ul>
@@ -110,7 +116,7 @@
                 </ul>
             </article>
 
-            <article class="cat-card">
+            <article class="cat-card" data-status="adoption">
                 <img src="bilder/purrito.jpeg"
                     alt="A white and grey fluffy cat with light blue eyes sitting on a wooden floor">
                 <h3>Purrito</h3>
@@ -124,7 +130,7 @@
                 </ul>
             </article>
 
-            <article class="cat-card">
+            <article class="cat-card" data-status="adoption">
                 <img src="bilder/mochi.jpeg" alt="A small cream-colored cat curled up on a blanket">
                 <h3>Mochi</h3>
                 <ul>
