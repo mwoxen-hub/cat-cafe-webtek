@@ -668,9 +668,8 @@ a:hover {
     width: 100%;
     max-width: 600px;
     border: 0;
-}
-
-.testing {
+} 
+.testing{
     margin: 20px;
     background-color: white;
     border-radius: 25px;
