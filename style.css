@@ -609,3 +609,13 @@ a:hover{
     color: white;
     text-decoration: none;
 }
+.testing{
+    margin: 20px;
+    background-color: white;
+    border-radius: 25px;
+    padding: 2rem 2rem 1.5rem;
+    width: 90%;
+    max-width: 1100px;
+    box-sizing: border-box;
+    box-shadow: 0 4px 12px rgba(58, 58, 44, 0.08);
+}
