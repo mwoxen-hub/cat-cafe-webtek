@@ -84,10 +84,10 @@
 
         <h2>2. Minimum requirements per team member</h2>
         <ul>
-            <li>Lea fulfilled her JavaScript requirement with the menu filter in filter.js on menu.html. </li>
-            <li>[Name] fulfilled her JavaScript requirements with date and time validation and a submit handler in booking.js on booking.html.</li>
-            <li>[Name] ...</li>
-            <li>[Name] ...</li>
+            <li>Marie reached her JavaScript requirement with the menu filter in filter.js on menu.html. </li>
+            <li>Lea made her JavaScript requirement with the shared navigation and burger menu in nav.js, used on every page.</li>
+            <li>Elena fulfilled the JavaScript requirement with an event handler for the range slider and a submit handler in adoption.js on adoption.html.</li>
+            <li>Dana fulfilled the JavaScript requirement with the shared footer in footer.js, which builds the footer with a clickable email address and phone number on every page.</li>
         </ul>
 
         <h2>3. Who worked on which files</h2>
@@ -105,13 +105,14 @@
             <tr><td>Artwork (logo, banner, buttons, photos)</td><td>[name / source]</td></tr>
         </table>
 
-        <h2>4. Modularity</h2>
-        <p>Repeated elements are not duplicated between pages:</p>
+       <h2>4. Modularity</h2>
+        <p>We avoided repeating code by using shared files:</p>
         <ul>
-            <li>Header and navigation are built by <code>nav.js</code> ([name]).</li>
-            <li>The footer is built by <code>footer.js</code> ([name]).</li>
-            <li>All pages share one stylesheet, <code>style.css</code> ([name]).</li>
-            <li>The menu filter lives in <code>filter.js</code> ([name]).</li>
+            <li>nav.js builds the header, navigation and burger menu on every page (Lea).</li>
+            <li>footer.js builds the footer on every page (Dana).</li>
+            <li>style.css is the one stylesheet for all pages (Marie).</li>
+            <li><li>adoption.js is loaded only on the adoption page (Elena).</li>
+            <li>filter.js, booking.js and adoption.js are used only on the pages that need them.</li>
         </ul>
     </main>
 
