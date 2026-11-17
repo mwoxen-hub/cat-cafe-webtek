@@ -47,3 +47,18 @@ function updateTime() {
 dateInput.addEventListener("change", updateTime);
 
 updateTime();
+
+const form = document.querySelector(".booking-form");
+
+form.addEventListener("submit", function (event) {
+    event.preventDefault();
+
+    let firstName = document.getElementById("firstName").value;
+    let date = dateInput.value;
+    let time = timeInput.value;
+    let people = document.getElementById("people").value;
+
+    alert(`Thank you, ${firstName}! Your table for ${people} is booked on ${date} at ${time}.`);
+
+    form.reset();
+});
