@@ -21,8 +21,8 @@
             <tr><th>Page</th><th>What changed</th><th>Why</th></tr>
             <tr>
                 <td>index.html</td>
-                <td></td>
-                <td></td>
+                <td>Sections shown as white cards, and the map scales to the screen width.</td>
+                <td> The cards separate the content into clear blocks, and the fixed-width map overflowed on mobile</td>
             </tr>
             <tr>
                 <td>cats.html</td>
@@ -36,55 +36,56 @@
             </tr>
              <tr>
                 <td>booking.html</td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>contact.html</td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>adoption.html</td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>about.html</td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>footer.js</td>
-                <td>Clickable email and phone</td>
-                <td>Cards with the photo first, then name and facts, make each cat easy to scan, and the grid fits the screen size</td>
-            </tr>
-            <tr>
-                <td>nav.js</td>
-                <td>Burger menu</td>
-                <td>Builds the shared header and navigation bar on all pages from one list of links (navLinks), so the links are written in one place. Highlights the current page with aria-current="page", and toggles the burger menu on small screens, updating aria-expanded and aria-label for screen readers.</td>
-            </tr>
-            <tr>
-                <td>filter.js</td>
-                <td> Easier navigation in menu.html</td>
-                <td> Adds a category filter to the menu page (filter.js). whit 5 categories, so the filter lets visitors jump straight to what they want, such as only drinks or only treats, without scrolling. The selected button is highlighted so it’s clear which category is showing.</td>
-            </tr>
-            <tr>
-                <td>adoption.js</td>
-                <td></td>
-                <td></td>
+                <td>The booking form asks for name, email, date, time and number of guests (1–8). All fields are required.</td>
+                <td>limits the choices to what the café can handle, and the required fields make sure we have the information needed to confirm a booking.</td>
             </tr>
             <tr>
                 <td>booking.js</td>
-                <td></td>
-                <td></td>
+                <td>Blocks past dates, limits the time to opening hours (different on weekdays and weekends), and shows a confirmation when the form is submitted.</td>
+                <td>Visitors can't book a table in the past or outside opening hours, and they get immediate feedback that the booking went through.</td>
             </tr>
+            <tr>
+                <td>contact.html</td>
+                <td>The contact information, social media, booking and adoption links are shown as four boxes side by side that wrap on small screens.</td>
+                <td>Visitors find every way to reach us or take the next step on one page, and the boxes adapt to the screen size.</td>
+            </tr>
+            <tr>
+                <td>adoption.html</td>
+                <td>Besides the application form, the page explains why to adopt, how the process works and what it costs. The form has required fields, a phone-number format, an age limit and a choice of cat.</td>
+                <td>Visitors can see the whole process and the fees before applying, and the form checks the input so we get complete, correctly formatted applications.</td>
+            </tr>
+
+            <tr>
+                <td>adoption.js</td>
+                <td>Shows the value of the "previous pets" slider next to it as it moves, and shows a confirmation message when the form is submitted.</td>
+                <td>The slider has no visible number on its own, so visitors can't tell what value they chose. The confirmation tells them that the application was received.</td>
+            </tr>
+            <tr>
+                <td>about.html</td>
+                <td>The owner is shown with a photo next to the text, the goals are shown as four cards in a grid, and there is a link to the contact page at the bottom.</td>
+                <td>The layout makes the page easy to scan, and the contact link gives visitors a clear next step. [Add the reason you chose this layout.]</td>
+            </tr>
+
+            <tr>
+                <td>footer.js</td>
+                <td>Footer is built with JavaScript, and the email and phone number are clickable links.</td>
+                <td>The same footer appears on every page from one file, and visitors can write or call straight from the footer, especially on mobile.</td>
+            </tr>
+            <tr>
+                <td>nav.js / style.css</td>
+                <td>The burger menu now appears at 900px instead of 700px</td>
+                <td>On tablet-sized screens the six links were cramped, so the menu collapses earlier.</td>
+            </tr>
+            <tr>
+                <td>filter.js</td>
+                <td> New script that filters the menu by category and highlights the selected button.</td>
+                <td> The menu has five categories, so visitors can jump straight to what they want, such as only drinks or only treats, without scrolling.</td>
         </table>
 
         <h2>2. Minimum requirements per team member</h2>
         <ul>
             <li>Lea fulfilled her JavaScript requirement with the menu filter in filter.js on menu.html. </li>
-            <li>[Name] ...</li>
+            <li>[Name] fulfilled her JavaScript requirements with date and time validation and a submit handler in booking.js on booking.html.</li>
             <li>[Name] ...</li>
             <li>[Name] ...</li>
         </ul>
