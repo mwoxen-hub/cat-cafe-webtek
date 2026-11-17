@@ -19,7 +19,7 @@ const footerHTML =
             "<p>X: <a href='https://x.com/PurrAndPourTRD'>@PurrAndPourTRD</a></p>" +
         "</div>" +
     "</div>" +
-    "<p class='footer-credits'>Dana, Elena, Lea og Marie</p>";
+    "<p class='footer-credits'>Dana, Elena, Lea and Marie</p>";
 
 function buildFooter() {
     const footer = document.getElementById("site-footer");
