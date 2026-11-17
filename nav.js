@@ -9,7 +9,7 @@ const navLinks = [
 
 function currentPage(){
     const page = window.location.pathname.split("/").pop();
-    return page == "" ? "default.html" : page;
+    return page == "" ? "index.html" : page;
 }
 
 function buildNavbar(){
