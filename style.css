@@ -677,6 +677,7 @@ a:hover {
     max-width: 600px;
     border: 0;
 } 
+/* P3_testing_7*/
 .testing{
     margin: 20px;
     background-color: white;
@@ -692,4 +693,9 @@ a:hover {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
+}
+
+.site-title a {
+  text-decoration: none;
+  color: inherit;
 }
