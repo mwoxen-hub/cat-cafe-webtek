@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +9,7 @@
     <script src="nav.js" defer></script>
     <script src="footer.js" defer></script>
 </head>
+
 <body>
     <header id="site-header"></header>
 
@@ -18,7 +20,11 @@
 
         <h2>1. Changes from the design</h2>
         <table>
-            <tr><th>Page</th><th>What changed</th><th>Why</th></tr>
+            <tr>
+                <th>Page</th>
+                <th>What changed</th>
+                <th>Why</th>
+            </tr>
             <tr>
                 <td>index.html</td>
                 <td>Sections shown as white cards, and the map scales to the screen width.</td>
@@ -26,50 +32,66 @@
             </tr>
             <tr>
                 <td>cats.html / cat-filter.js</td>
-                <td>Added filter buttons that show all cats, only cats available for adoption, or only café residents. The selected button is highlighted.</td>
-                <td>Visitors who want to adopt can quickly find the cats that are available, without reading through every cat on the page.</td>
+                <td>Added filter buttons that show all cats, only cats available for adoption, or only café residents.
+                    The selected button is highlighted.</td>
+                <td>Visitors who want to adopt can quickly find the cats that are available, without reading through
+                    every cat on the page.</td>
             </tr>
-             <tr>
+            <tr>
                 <td>menu.html</td>
                 <td>Added category filter buttons.</td>
                 <td>Easier to find items on a long menu </td>
             </tr>
-             <tr>
+            <tr>
                 <td>booking.html</td>
-                <td>The booking form asks for name, email, date, time and number of guests (1–8). All fields are required.</td>
-                <td>limits the choices to what the café can handle, and the required fields make sure we have the information needed to confirm a booking.</td>
+                <td>The booking form asks for name, email, date, time and number of guests (1–8). All fields are
+                    required.</td>
+                <td>limits the choices to what the café can handle, and the required fields make sure we have the
+                    information needed to confirm a booking.</td>
             </tr>
             <tr>
                 <td>booking.js</td>
-                <td>Blocks past dates, limits the time to opening hours (different on weekdays and weekends), and shows a confirmation when the form is submitted.</td>
-                <td>Visitors can't book a table in the past or outside opening hours, and they get immediate feedback that the booking went through.</td>
+                <td>Blocks past dates, limits the time to opening hours (different on weekdays and weekends), and shows
+                    a confirmation when the form is submitted.</td>
+                <td>Visitors can't book a table in the past or outside opening hours, and they get immediate feedback
+                    that the booking went through.</td>
             </tr>
             <tr>
                 <td>contact.html</td>
-                <td>The contact information, social media, booking and adoption links are shown as four boxes side by side that wrap on small screens.</td>
-                <td>Visitors find every way to reach us or take the next step on one page, and the boxes adapt to the screen size.</td>
+                <td>The contact information, social media, booking, adoption and job application links are shown as five
+                    boxes side by side that wrap on small screens.</td>
+                <td>Visitors find every way to reach us or take the next step on one page, and the boxes adapt to the
+                    screen size. The job box was added to meet our requirement from P1 that visitors can find job
+                    opportunities.</td>
             </tr>
             <tr>
                 <td>adoption.html</td>
-                <td>Besides the application form, the page explains why to adopt, how the process works and what it costs. The form has required fields, a phone-number format, an age limit and a choice of cat.</td>
-                <td>Visitors can see the whole process and the fees before applying, and the form checks the input so we get complete, correctly formatted applications.</td>
+                <td>Besides the application form, the page explains why to adopt, how the process works and what it
+                    costs. The form has required fields, a phone-number format, an age limit and a choice of cat.</td>
+                <td>Visitors can see the whole process and the fees before applying, and the form checks the input so we
+                    get complete, correctly formatted applications.</td>
             </tr>
 
             <tr>
                 <td>adoption.js</td>
-                <td>Shows the value of the "previous pets" slider next to it as it moves, and shows a confirmation message when the form is submitted.</td>
-                <td>The slider has no visible number on its own, so visitors can't tell what value they chose. The confirmation tells them that the application was received.</td>
+                <td>Shows the value of the "previous pets" slider next to it as it moves, and shows a confirmation
+                    message when the form is submitted.</td>
+                <td>The slider has no visible number on its own, so visitors can't tell what value they chose. The
+                    confirmation tells them that the application was received.</td>
             </tr>
             <tr>
                 <td>about.html</td>
-                <td>The owner is shown with a photo next to the text, the goals are shown as four cards in a grid, and there is a link to the contact page at the bottom.</td>
-                <td>The layout makes the page easy to scan, and the contact link gives visitors a clear next step. We have also added a donation section anmed "Support our cause" </td>
+                <td>The owner is shown with a photo next to the text, the goals are shown as four cards in a grid, a
+                    "Support our cause" section explains our donations to WWF, and there is a link to the contact page
+                    at the bottom.</td>
+                <td>The layout makes the page easy to scan, the donation section lets visitors know how they can support
+                    animals, and the contact link gives them a clear next step.</td>
             </tr>
-
             <tr>
                 <td>footer.js</td>
                 <td>Footer is built with JavaScript, and the email and phone number are clickable links.</td>
-                <td>The same footer appears on every page from one file, and visitors can write or call straight from the footer, especially on mobile.</td>
+                <td>The same footer appears on every page from one file, and visitors can write or call straight from
+                    the footer, especially on mobile.</td>
             </tr>
             <tr>
                 <td>nav.js / style.css</td>
@@ -79,45 +101,97 @@
             <tr>
                 <td>filter.js</td>
                 <td> New script that filters the menu by category and highlights the selected button.</td>
-                <td> The menu has five categories, so visitors can jump straight to what they want, such as only drinks or only treats, without scrolling.</td>
+                <td> The menu has five categories, so visitors can jump straight to what they want, such as only drinks
+                    or only treats, without scrolling.</td>
             </tr>
         </table>
 
         <h2>2. Minimum requirements per team member</h2>
         <ul>
-            <li>Marie reached her JavaScript requirement with the menu filter in filter.js on menu.html. </li>
-            <li>Lea made her JavaScript requirement with the shared navigation and burger menu in nav.js, used on every page.</li>
-            <li>Elena fulfilled the JavaScript requirement with an event handler for the range slider and a submit handler in adoption.js on adoption.html.</li>
-            <li>Dana fulfilled the JavaScript requirement with the shared footer in footer.js, which builds the footer with a clickable email address and phone number on every page.</li>
+            <li>Marie reached her JavaScript requirement with the cat filter in cat-filter.js on cats.html. She also
+                extended booking.js with opening hours for weekdays and weekends and a booking confirmation, and fixed
+                the active link for Home in nav.js.</li>
+            <li>Lea made her JavaScript requirement with the shared navigation and burger menu in nav.js, used on every
+                page.</li>
+            <li>Elena fulfilled the JavaScript requirement with an event handler for the range slider and a submit
+                handler in adoption.js on adoption.html.</li>
+            <li>Dana fulfilled the JavaScript requirement with booking.js on booking.html, which blocks past dates when
+                booking a table.</li>
         </ul>
 
         <h2>3. Who worked on which files</h2>
         <table>
-            <tr><th>File</th><th>Responsible</th></tr>
-            <tr><td>index.html</td><td> Everyone </td></tr>
-            <tr><td>cats.html</td><td>Lea</td></tr>
-            <tr><td>menu.html</td><td>Dana</td></tr>
-            <tr><td>about.html, booking.html, contact.html, adoption.html</td><td>Dana</td></tr>
-            <tr><td>style.css</td><td>Marie</td></tr>
-            <tr><td>nav.js</td><td>Lea</td></tr>
-            <tr><td>booking.js</td><td>Dana</td></tr>
-            <tr><td>footer.js</td><td>Lea</td></tr>
-            <tr><td>filter.js</td><td>Marie</td></tr>
-            <tr><td>adoption.js</td><td>Elena</td></tr>
-            <tr><td>Artwork (logo, banner, buttons, photos)</td><td>everyone / <a href="https://unsplash.com/"> unsplash</a></td></tr>
+            <tr>
+                <th>File</th>
+                <th>Responsible</th>
+            </tr>
+            <tr>
+                <td>index.html</td>
+                <td> Everyone </td>
+            </tr>
+            <tr>
+                <td>cats.html</td>
+                <td>Lea</td>
+            </tr>
+            <tr>
+                <td>menu.html</td>
+                <td>Dana</td>
+            </tr>
+            <tr>
+                <td>about.html, booking.html, contact.html, adoption.html</td>
+                <td>Dana</td>
+            </tr>
+            <tr>
+                <td>style.css</td>
+                <td>Marie</td>
+            </tr>
+            <tr>
+                <td>nav.js</td>
+                <td>Lea</td>
+            </tr>
+            <tr>
+                <td>booking.js</td>
+                <td>Dana, Marie</td>
+            </tr>
+            <tr>
+                <td>footer.js</td>
+                <td>Lea</td>
+            </tr>
+            <tr>
+                <td>filter.js</td>
+                <td>Lea</td>
+            </tr>
+            <tr>
+                <td>adoption.js</td>
+                <td>Elena</td>
+            </tr>
+            <tr>
+                <td>cat-filter.js</td>
+                <td>Marie</td>
+            </tr>
+            <tr>
+                <td>Review, bug fixes and improvements across all pages</td>
+                <td>Marie</td>
+            </tr>
+            <tr>
+                <td>Artwork (logo, banner, buttons, photos)</td>
+                <td>everyone / <a href="https://unsplash.com/"> unsplash</a></td>
+            </tr>
         </table>
 
-       <h2>4. Modularity</h2>
-        <p>Elements that are repeated on every page are written once in shared files, so no code is duplicated between pages:</p>
+        <h2>4. Modularity</h2>
+        <p>Elements that are repeated on every page are written once in shared files, so no code is duplicated between
+            pages:</p>
         <ul>
             <li>nav.js builds the header, navigation and burger menu on every page (Lea).</li>
             <li>footer.js builds the footer on every page (Lea).</li>
             <li>style.css is the one stylesheet for all pages (Marie).</li>
             <li>adoption.js is loaded only on the adoption page (Elena).</li>
-            <li>filter.js, booking.js and adoption.js are used only on the pages that need them.(Dana)</li>
+            <li>filter.js, cat-filter.js, booking.js and adoption.js are used only on the pages that need them.</li>
         </ul>
     </main>
 
     <footer id="site-footer"></footer>
 </body>
+
 </html>
