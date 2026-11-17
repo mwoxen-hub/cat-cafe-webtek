@@ -609,3 +609,9 @@ a:hover{
     color: white;
     text-decoration: none;
 }
+
+.visit iframe {
+    width: 100%;
+    max-width: 600px;
+    border: 0; 
+}
