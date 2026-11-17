@@ -31,13 +31,17 @@ function updateTime() {
     let mins = String(now.getMinutes()).padStart(2, "0");
 
     let minTime = `${hours}:${mins}`;
-
+    let chosenDay = new Date(dateInput.value).getDay();
+    let isWeekend = chosenDay === 0 || chosenDay === 6;
+    let openTime = isWeekend ? "11:00" : "10:00";
+    let lastBooking = isWeekend ? "16:30" : "17:30";
     // Gjelder bare når brukeren velger dagens dato
     if (dateInput.value === currentDate) {
-        timeInput.min = minTime > "16:00" ? minTime : "16:00";
+        timeInput.min = minTime > openTime ? minTime : openTime;
     } else {
-        timeInput.min = "16:00";
+        timeInput.min = openTime;
     }
+    timeInput.max = lastBooking;
 }
 
 dateInput.addEventListener("change", updateTime);
