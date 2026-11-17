@@ -24,7 +24,7 @@ function buildNavbar(){
 
 return (
     '<div class="meny">' +
-    '<h1 class = "site-title">Purr &amp; Pour </h1>' +
+    '<p class="site-title">Purr &amp; Pour</p>' +
     '  <button class="nav-toggle" aria-expanded="false" aria-controls="nav-list" aria-label="Open menu">=</button>' +
     '  <nav aria-label="Main navigation">'+
     '    <ul class="nav-grid" id="nav-list">' + items + "</ul>" +
