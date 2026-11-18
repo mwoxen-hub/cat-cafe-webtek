@@ -1,3 +1,4 @@
+// Builds the footer with address, opening hours, contact information and social media links on every page.
 const footerHTML =
     "<div class='footer-columns'>" +
         "<div class='footer-group'>" +

@@ -1,3 +1,5 @@
+// Filters the cats on cats.html by status: all cats, available for adoption, or café residents.
+// Based on the menu filter in filter.js.   
 const buttons = document.querySelectorAll(".cat-filter button");
 const sections = document.querySelectorAll(".cat-card");
 

@@ -1,3 +1,5 @@
+// Builds the header with the logo and navigation links on every page, 
+// marks the current page, and shows a burger menu on small screens.
 const navLinks = [
     { text: "Home", url: "index.html" },
     { text: "About", url: "about.html" },
@@ -7,34 +9,34 @@ const navLinks = [
     { text: "Contact", url: "contact.html" }
 ];
 
-function currentPage(){
+function currentPage() {
     const page = window.location.pathname.split("/").pop();
     return page == "" ? "index.html" : page;
 }
 
-function buildNavbar(){
+function buildNavbar() {
     const current = currentPage();
 
     const items = navLinks
-        .map(function (link){
-            const active = link.url === current ? ' aria-current="page"' :"";
+        .map(function (link) {
+            const active = link.url === current ? ' aria-current="page"' : "";
             return '<li><a href="' + link.url + '"' + active + ">" + link.text + "</a></li>";
         })
         .join("");
 
-return (
-    '<div class="meny">' +
-    '<p class="site-title"><a href="index.html">Purr &amp; Pour</a></p>' +
-    '  <button class="nav-toggle" aria-expanded="false" aria-controls="nav-list" aria-label="Open menu">=</button>' +
-    '  <nav aria-label="Main navigation">'+
-    '    <ul class="nav-grid" id="nav-list">' + items + "</ul>" +
-    "  </nav>" +
-    '</div>'
-);
+    return (
+        '<div class="meny">' +
+        '<p class="site-title"><a href="index.html">Purr &amp; Pour</a></p>' +
+        '  <button class="nav-toggle" aria-expanded="false" aria-controls="nav-list" aria-label="Open menu">=</button>' +
+        '  <nav aria-label="Main navigation">' +
+        '    <ul class="nav-grid" id="nav-list">' + items + "</ul>" +
+        "  </nav>" +
+        '</div>'
+    );
 
 }
 //this is what makes the burger-menu on phones
-function setupToggle (){
+function setupToggle() {
     const button = document.querySelector(".nav-toggle");
     const list = document.getElementById("nav-list");
     if (!button || !list) {
@@ -42,18 +44,18 @@ function setupToggle (){
         return;
     }
 
-    button.addEventListener("click",function (){
-        const isOpen =list.classList.toggle("open");
+    button.addEventListener("click", function () {
+        const isOpen = list.classList.toggle("open");
 
-        button.setAttribute("aria-expanded",isOpen);
-        button.setAttribute("aria-label",isOpen? "Close menu" : "Open menu")
+        button.setAttribute("aria-expanded", isOpen);
+        button.setAttribute("aria-label", isOpen ? "Close menu" : "Open menu")
     });
 
 }
 
-document.addEventListener("DOMContentLoaded",function(){
+document.addEventListener("DOMContentLoaded", function () {
     const header = document.getElementById("site-header");
-    if (!header) return; // hvis siden ikke har "site-header", gjør ingenting
+    if (!header) return; // if the page has no "site-header", do nothing
     header.innerHTML = buildNavbar();
     setupToggle();
 });

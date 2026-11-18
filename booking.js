@@ -1,4 +1,5 @@
-
+// Booking form: blocks past dates, limits the time to opening hours (different on weekdays and weekends), 
+// It also shows a confirmation when the form is sent.
 let dateInput = document.getElementById("bookDate");
 let timeInput = document.getElementById("time");
 
@@ -17,10 +18,10 @@ dateInput.min = currentDate;
 function updateTime() {
     let now = new Date();
 
-    // Legg til 30 minutter
+    // Add 30 minutes
     now.setMinutes(now.getMinutes() + 30);
 
-    // Rund opp til nærmeste kvarter
+    // Round up to the nearest quarter hour
     let minutes = Math.ceil(
         (now.getMinutes() + now.getSeconds() / 60) / 15
     ) * 15;
@@ -35,7 +36,7 @@ function updateTime() {
     let isWeekend = chosenDay === 0 || chosenDay === 6;
     let openTime = isWeekend ? "11:00" : "10:00";
     let lastBooking = isWeekend ? "16:30" : "17:30";
-    // Gjelder bare når brukeren velger dagens dato
+    // Only applies when the user chooses today's date
     if (dateInput.value === currentDate) {
         timeInput.min = minTime > openTime ? minTime : openTime;
     } else {

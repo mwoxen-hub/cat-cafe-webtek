@@ -1,3 +1,5 @@
+// This is for adoption.html. It shows the number on the slider for "previous pets". 
+// It also shows a confirmation when the form is sent.
 const elementToBeUpdated = document.getElementById("previousEventsNumber");
 const rangeElement = document.getElementById("previousTotalEvents");
 rangeElement.addEventListener("input", function(event){
