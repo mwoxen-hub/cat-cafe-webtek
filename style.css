@@ -694,6 +694,11 @@ a:hover {
     grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
 }
+@media (max-width: 900px) {
+    .testing-box {
+        grid-template-columns: 1fr;
+    }
+}
 
 /* Navbar */
 .site-title a {
